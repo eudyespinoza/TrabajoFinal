@@ -16,7 +16,7 @@ Algoritmo FARMASALUD_TURNO
 			1:
 				Escribir "En breve será atendido con el número C",contar_COS
 				Escribir ""
-				Si contar_COS < 10 Entonces
+				Si contar_COS < 9 Entonces
 					contar_COS <- contar_COS + 1 
 				SiNo
 					contar_COS <- 1
@@ -25,7 +25,7 @@ Algoritmo FARMASALUD_TURNO
 			2:
 				Escribir "En breve será atendido con el número S",contar_SOS
 				Escribir ""
-				Si contar_SOS < 10 Entonces
+				Si contar_SOS < 9 Entonces
 					contar_SOS <- contar_SOS + 1 
 				SiNo
 					contar_SOS <- 1
