@@ -1,0 +1,36 @@
+Algoritmo FARMASALUD_TURNO
+	
+	Definir Opc, contar_COS, contar_SOS, cant_Clientes Como Entero	
+	contar_COS <- 1
+	contar_SOS <- 1
+	cant_Clientes <- 0
+	Repetir
+		Escribir "Bienvenido a FARMASALUD!"
+		Escribir ""
+		Escribir "Seleccione una de las siguientes opciones para ser atendido"
+		Escribir ""
+		Escribir "1. Cliente CON Obra Social"
+		Escribir "2. Cliente SIN Obra Social"
+		Leer Opc
+		Si Opc = 1 Entonces			
+			Escribir "En breve ser� atendido con el n�mero C",contar_COS
+			Escribir ""
+			Si contar_COS < 10 Entonces
+				contar_COS <- contar_COS + 1 
+			SiNo
+				contar_COS <- 1
+			FinSi
+		SiNo
+			Si Opc = 2 Entonces
+				Escribir "En breve ser� atendido con el n�mero S",contar_SOS
+				Escribir ""
+				Si contar_SOS < 10 Entonces
+					contar_SOS <- contar_SOS + 1 
+				SiNo
+					contar_SOS <- 1
+				FinSi
+			FinSi
+		FinSi
+		cant_Clientes <- cant_Clientes + 1
+	Hasta Que cant_Clientes = 20
+FinAlgoritmo
