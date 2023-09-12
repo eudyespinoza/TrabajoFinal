@@ -1,0 +1,10 @@
+Una Farmacia solicita un software que sea capaz de gestionar los turnos atendidos en el día con un límite de 200 clientes en total y mantenga el listado de artículos y precios
+
+Se tendra el cuenta los siguientes requisitos funcionales
+
+Para la gestion de turnos
+
+Se requiere que se muestre un menu en pantalla con dos opciones 1. "Cliente CON Obra Social" y 2. "Cliente SIN Obra Social" para los cuales se mostrará luego de la seleccion del 
+usuario el siguiente mensaje "En breve será atendido con el número" "CX" si seleccionó 1 o "En breve será atendido con el número" "SX" si seleccionó 2, donde X es el valor de un 
+numero consecutivo del 1 al 99 que deberá inicializar de nuevo si supera el limite establecido. Por otro lado si el usuario selecciona una opcion diferente a 1 o 2 deberá mostrar
+el siguiente mensaje de error "Ingrese una opcion válida!"
