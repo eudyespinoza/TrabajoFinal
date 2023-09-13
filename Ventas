@@ -1,0 +1,65 @@
+Algoritmo FARMASALUD_VENTA
+	Definir cont_prod, stop Como Entero
+	Definir producto como Caracter
+	Definir precio, total, ahorro, pagar Como Real
+	cont_prod <- 0
+	stop <- 0
+	precio <- 0
+	total <- 0
+	ahorro <- 0
+	pagar <- 0
+	Repetir
+		cont_prod <- cont_prod + 1
+		Escribir "Ingrese el nombre del producto"
+		Leer producto
+		Escribir ""
+		Escribir "Ingrese el precio del artículo"
+		Leer precio
+		total <- total + precio
+		Escribir "Presione 1 si desea AGREGAR otro producto, para CONTINUAR con la venta presione enter"
+		Leer opc
+		Escribir ""
+		Si opc <> 1 Entonces
+			stop <- 1
+		FinSi
+	Hasta Que stop = 1
+	Repetir
+		Escribir "Seleccione la Obra Social del cliente"
+		Escribir "1. OSDE" //20%
+		Escribir "2. OSEC" //25%
+		Escribir "3. Swiss Medical" //30%
+		Escribir "4. OSFAA" //35%
+		Escribir "5. PAMI" //40%
+		Leer select
+		Segun select Hacer
+			1:
+				ahorro <- total * 0.2
+				pagar <- total - ahorro
+				Escribir "Su compra fue por ",cont_prod, " productos, el total a pagar es $", pagar
+				Escribir "En esta compra usted ahorró $",ahorro
+			2:
+				ahorro <- total * 0.25
+				pagar <- total - ahorro
+				Escribir "Su compra fue por ",cont_prod, " productos, el total a pagar es $", pagar
+				Escribir "En esta compra usted ahorró $",ahorro
+			3:
+				ahorro <- total * 0.3
+				pagar <- total - ahorro
+				Escribir "Su compra fue por ",cont_prod, " productos, el total a pagar es $", pagar
+				Escribir "En esta compra usted ahorró $",ahorro
+			4:
+				ahorro <- total * 0.35
+				pagar <- total - ahorro
+				Escribir "Su compra fue por ",cont_prod, " productos, el total a pagar es $", pagar
+				Escribir "En esta compra usted ahorró $",ahorro
+			5:
+				ahorro <- total * 0.4
+				pagar <- total - ahorro
+				Escribir "Su compra fue por ",cont_prod, " productos, el total a pagar es $", pagar
+				Escribir "En esta compra usted ahorró $",ahorro
+				
+			De Otro Modo:
+				Escribir "Ingrese una opcion correcta"
+		Fin Segun
+	Hasta Que select = 1 O select = 2 O select = 3 O select = 4 O select = 5		
+FinAlgoritmo
