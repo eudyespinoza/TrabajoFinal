@@ -1,4 +1,5 @@
-Una Farmacia solicita un software que sea capaz de gestionar los turnos atendidos en el día con un límite de 20 clientes en total y mantenga el listado de artículos y precios
+Una Farmacia solicita un software que sea capaz de gestionar los turnos atendidos en el día con un límite de 20 clientes en total y gestione las ventas de los artículos y descuentos
+según la obra social
 
 Se tendra el cuenta los siguientes requisitos funcionales
 
@@ -8,3 +9,9 @@ Se requiere que se muestre un menu en pantalla con dos opciones 1. "Cliente CON 
 usuario el siguiente mensaje "En breve será atendido con el número" "CX" si seleccionó 1 o "En breve será atendido con el número" "SX" si seleccionó 2, donde X es el valor de un 
 numero consecutivo del 1 al 9 que deberá inicializar de nuevo si supera el limite establecido. Por otro lado si el usuario selecciona una opcion diferente a 1 o 2 deberá mostrar
 el siguiente mensaje de error "Ingrese una opcion válida!". También se debe otorgar un máximo de 20 turnos
+
+Para la gestion de ventas
+Se requiere que se muestre una pantalla donde se pueda ingresar el nombre del producto vendido y el precio las veces que sea necesario, luego para continuar con la venta se requiere
+un menu donde se pueda elegir entre las siguientes obras sociales 1. OSDE 20% 2. OSEC 25% 3. Swiss Medical 30% 4. OSFAA 35% 5. PAMI 40%, segun la selección cada una deberá aplicar el
+descuento correspondiente. Ademas se debe mostrar en pantalla luego de realizar la seleccion "Su compra fue por (la cantidad de productos) productos, el total a pagar es $ (el monto 
+a pagar) En esta compra usted ahorró $ (el monto del descuento)
